@@ -83,6 +83,9 @@
     "Passenger" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger"
     },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
     "Seat" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat"
     },
@@ -169,6 +172,9 @@
     },
     "FlightInformation" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
     },
     "hasPassenger" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger",
