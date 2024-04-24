@@ -9,6 +9,9 @@
     "Review" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "NotSatisfiedPassenger" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger"
     },
@@ -169,6 +172,9 @@
     },
     "FlightInformation" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
     },
     "hasPassenger" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger",
