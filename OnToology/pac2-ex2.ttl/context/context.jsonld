@@ -6,12 +6,6 @@
     "Verification" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification"
     },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
-    },
-    "created" : {
-      "@id" : "http://purl.org/dc/terms/created"
-    },
     "Review" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review"
     },
@@ -81,9 +75,6 @@
     "answeredBy" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy",
       "@type" : "@id"
-    },
-    "creator" : {
-      "@id" : "http://purl.org/dc/terms/creator"
     },
     "TransitFlight" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight"
@@ -175,9 +166,6 @@
     },
     "SoloLeisure" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure"
-    },
-    "contributor" : {
-      "@id" : "http://purl.org/dc/terms/contributor"
     },
     "BusinessClass" : {
       "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass"
