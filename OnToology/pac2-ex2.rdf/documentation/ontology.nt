@@ -1,0 +1,738 @@
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> <http://purl.org/dc/elements/1.1/description> "This ontology is related to flight satisfaction surveys. Its data is extracted from Kaggle and the companies Qatar Airways and Ryanair. This is a practice exercice for Knowladge Representation subject (Universitat Oberta de Catalunya)."@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> <http://purl.org/dc/elements/1.1/title> "Airline Rating"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> <http://purl.org/dc/terms/contributor> "https://github.com/alexgrauroca" .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> <http://purl.org/dc/terms/created> "2024-04-17" .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> <http://purl.org/dc/terms/creator> "https://github.com/alexgrauroca" .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> <http://purl.org/dc/terms/license> "http://gnu.org/licenses/gpl-3.0.html" .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> <http://schema.org/codeRepository> "https://github.com/alexgrauroca/uoc-rc-pac2-ontology" .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> <http://www.w3.org/2000/01/rdf-schema#label> "Airline Rating"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/codeRepository
+<http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The review was answered by a passenger"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "answeredBy"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger flown with a flight"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> <http://www.w3.org/2000/01/rdf-schema#label> "flownWith"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight has an associated aircraft, but we do not always know its aircraft."@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "hasAircraft"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight has an associated airline that operated it"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> <http://www.w3.org/2000/01/rdf-schema#label> "hasAirline"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger answered a review"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> <http://www.w3.org/2000/01/rdf-schema#label> "hasAnswered"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight has as destination a location"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> <http://www.w3.org/2000/01/rdf-schema#label> "hasDestination"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight has flight information"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> <http://www.w3.org/2000/01/rdf-schema#label> "hasInformation"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight has as origin a location"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasOrigin"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger has a passage"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> <http://www.w3.org/2000/01/rdf-schema#label> "hasPassage"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight has passengers"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "hasPassenger"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger has a seat"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeat"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger is from a country"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> <http://www.w3.org/2000/01/rdf-schema#label> "isFrom"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isPassengerType
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isPassengerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isPassengerType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isPassengerType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isPassengerType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isPassengerType> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger type info"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isPassengerType> <http://www.w3.org/2000/01/rdf-schema#label> "isPassengerType"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger verification info"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> <http://www.w3.org/2000/01/rdf-schema#label> "isVerified"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/comment
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/comment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/comment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/comment> <http://www.w3.org/2000/01/rdf-schema#comment> "The comment of the review made by the passenger"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#unsignedShort> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#unsignedShort> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of connections of a flight. The minimum number of connections is 1"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> <http://www.w3.org/2000/01/rdf-schema#label> "connections"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/dateFlown
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/dateFlown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/dateFlown> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/dateFlown> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/dateFlown> <http://www.w3.org/2000/01/rdf-schema#comment> "The date where the flight flown. As we only have the month and year, we will only set day as 1 and time 00:00:00"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/dateFlown> <http://www.w3.org/2000/01/rdf-schema#label> "dateFlown"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/datePublished
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/datePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/datePublished> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/datePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/datePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the review was published by the passenger"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/datePublished> <http://www.w3.org/2000/01/rdf-schema#label> "datePublished"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isRecommended
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isRecommended> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isRecommended> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isRecommended> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#short> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2001/XMLSchema#minInclusive> "-1"^^<http://www.w3.org/2001/XMLSchema#short> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#short> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isRecommended> <http://www.w3.org/2000/01/rdf-schema#comment> "If the passenger recommended the flight or not. There are cases where we do not know its value, so we have the following rules: 1 for recommended, 0 for not recommended and -1 for unkown"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isRecommended> <http://www.w3.org/2000/01/rdf-schema#label> "isRecommended"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/name
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/name> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger name"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/rating
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/rating> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#unsignedShort> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#unsignedShort> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#unsignedShort> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/rating> <http://www.w3.org/2000/01/rdf-schema#comment> "The review rating provided by the passenger, from 1 to 10"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/rating> <http://www.w3.org/2000/01/rdf-schema#label> "rating"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/title
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/title> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of the review made by the passenger"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/title> <http://www.w3.org/2000/01/rdf-schema#label> "title"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "The aircraft that operates one or more flights" .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "The airline that operates different flights"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Business
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Business> <http://www.w3.org/2000/01/rdf-schema#comment> "Business passenger type"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Business class seat"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass> <http://www.w3.org/2000/01/rdf-schema#label> "BusinessClass"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "The country, currently this is related to passanger only, but in long term it could be related to other entites, like location, airline..."@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/country"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/CoupleLeisure
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/CoupleLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Couple leisure passenger type"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "CoupleLeisure"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> .
+_:genid14 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+_:genid15 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> .
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> .
+_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft> .
+_:genid19 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#unsignedShort> .
+_:genid20 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight is direct if the number of connections is 1"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> <http://www.w3.org/2000/01/rdf-schema#label> "DirectFlight"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/EconomyClass
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/EconomyClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/EconomyClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Economy class seat"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/EconomyClass> <http://www.w3.org/2000/01/rdf-schema#label> "EconomyClass"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FamilyLeisure
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FamilyLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Family leisure passenger type"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "FamilyLeisure"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FirstClass
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FirstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FirstClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FirstClass> <http://www.w3.org/2000/01/rdf-schema#comment> "First class seat"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FirstClass> <http://www.w3.org/2000/01/rdf-schema#label> "FirstClass"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> .
+_:genid21 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+_:genid22 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline> .
+_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> .
+_:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> .
+_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft> .
+_:genid26 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#unsignedShort> .
+_:genid27 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight route offered by the airline on a specific date"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight detailed information, like the aircraft that operated the flight, the airline that operates the flight..."@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> <http://www.w3.org/2000/01/rdf-schema#label> "FlightInformation"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location data. Currently, it's related to the origin and destination of a flight, but it can be related with other entites in the future, like the passenger data, the diferent stops of a transit flight..."@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Location"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended> <http://www.w3.org/2000/01/rdf-schema#comment> "The result of the review is flight not recommended by the passenger. Equivalent to isRecommended equal 0"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended> <http://www.w3.org/2000/01/rdf-schema#label> "NotRecommended"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> .
+_:genid29 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+_:genid30 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> .
+_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> .
+_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> .
+_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger was not satisfied with the flight"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "NotSatisfiedPassenger"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotVerified
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotVerified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotVerified> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verified> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotVerified> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger was not verified"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotVerified> <http://www.w3.org/2000/01/rdf-schema#label> "NotVerified" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> <http://www.w3.org/2000/01/rdf-schema#comment> "Passage info of the passenger"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> <http://www.w3.org/2000/01/rdf-schema#label> "Passage"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> .
+_:genid35 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> .
+_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger data"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/ontology/Person"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger type"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> <http://www.w3.org/2000/01/rdf-schema#label> "PassengerType"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PremiumEconomy
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PremiumEconomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#comment> "Premium economy seat"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#label> "PremiumEconomy"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown> <http://www.w3.org/2000/01/rdf-schema#comment> "We do not know if the passenger recommended or not the flight. Equivalent to isRecommended equal -1"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown> <http://www.w3.org/2000/01/rdf-schema#label> "RecommendationUnknwon"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "The result of the review is flight recommended by the passenger. Equivalent to isRecommended equal 1"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> <http://www.w3.org/2000/01/rdf-schema#comment> "Review data of the survey, with info like rating, published date, comment..."@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> .
+_:genid44 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+_:genid45 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+_:genid46 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> .
+_:genid47 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> .
+_:genid48 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> .
+_:genid49 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Grade of satisfaction of the passenger, based on the review rating value. If the rating is higher or equal than 5, then the passenger is considered as satisifed, otherwise is considered as not satisfied"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "Satisfaction"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> .
+_:genid50 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+_:genid51 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> .
+_:genid52 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> .
+_:genid53 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> .
+_:genid54 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> .
+_:genid55 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger was satisfied with the flight"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "SatisfiedPassenger"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> <http://www.w3.org/2000/01/rdf-schema#comment> "The seat info"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> <http://www.w3.org/2000/01/rdf-schema#label> "Seat"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Solo leisure passenger type"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "SoloLeisure"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> .
+_:genid56 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> .
+_:genid57 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline> .
+_:genid58 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> .
+_:genid59 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> .
+_:genid60 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft> .
+_:genid61 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#unsignedShort> .
+_:genid62 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight is transit if the number of connections is greater than 1"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> <http://www.w3.org/2000/01/rdf-schema#label> "TransitFlight"@en .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> <http://www.w3.org/2000/01/rdf-schema#comment> "Verification represents if the passage was verified or not. If it was not verified, then we do not know if the passenger was a truthly passenger of the flight."@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> <http://www.w3.org/2000/01/rdf-schema#label> "Verification" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verified
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verified> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger was verified"@en .
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verified> <http://www.w3.org/2000/01/rdf-schema#label> "Verified"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid63 <http://www.w3.org/2002/07/owl#members> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FamilyLeisure> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/CoupleLeisure> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Business> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid68 <http://www.w3.org/2002/07/owl#members> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PremiumEconomy> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FirstClass> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/EconomyClass> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid73 <http://www.w3.org/2002/07/owl#members> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

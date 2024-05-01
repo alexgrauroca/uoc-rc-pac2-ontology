@@ -1,0 +1,756 @@
+@prefix : <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating#> .
+
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating> rdf:type owl:Ontology ;
+                                                                    <http://purl.org/dc/elements/1.1/description> "This ontology is related to flight satisfaction surveys. Its data is extracted from Kaggle and the companies Qatar Airways and Ryanair. This is a practice exercice for Knowladge Representation subject (Universitat Oberta de Catalunya)."@en ;
+                                                                    <http://purl.org/dc/elements/1.1/title> "Airline Rating"@en ;
+                                                                    <http://purl.org/dc/terms/contributor> "https://github.com/alexgrauroca" ;
+                                                                    <http://purl.org/dc/terms/created> "2024-04-17" ;
+                                                                    <http://purl.org/dc/terms/creator> "https://github.com/alexgrauroca" ;
+                                                                    <http://purl.org/dc/terms/license> "http://gnu.org/licenses/gpl-3.0.html" ;
+                                                                    <http://schema.org/codeRepository> "https://github.com/alexgrauroca/uoc-rc-pac2-ontology" ;
+                                                                    rdfs:label "Airline Rating"@en ;
+                                                                    owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/codeRepository
+<http://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> rdf:type owl:ObjectProperty ;
+                                                                              owl:inverseOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> ;
+                                                                              rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> ;
+                                                                              rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ;
+                                                                              rdfs:comment "The review was answered by a passenger"@en ;
+                                                                              rdfs:label "answeredBy"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> rdf:type owl:ObjectProperty ;
+                                                                             owl:inverseOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> ;
+                                                                             rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ;
+                                                                             rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ;
+                                                                             rdfs:comment "The passenger flown with a flight"@en ;
+                                                                             rdfs:label "flownWith"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> ;
+                                                                               rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ;
+                                                                               rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft> ;
+                                                                               rdfs:comment "The flight has an associated aircraft, but we do not always know its aircraft."@en ;
+                                                                               rdfs:label "hasAircraft"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> ;
+                                                                              rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ;
+                                                                              rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline> ;
+                                                                              rdfs:comment "The flight has an associated airline that operated it"@en ;
+                                                                              rdfs:label "hasAirline"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ;
+                                                                               rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> ;
+                                                                               rdfs:comment "The passenger answered a review"@en ;
+                                                                               rdfs:label "hasAnswered"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> ;
+                                                                                  owl:propertyDisjointWith <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> ;
+                                                                                  rdfs:comment "The flight has as destination a location"@en ;
+                                                                                  rdfs:label "hasDestination"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> ;
+                                                                                  rdfs:comment "The flight has flight information"@en ;
+                                                                                  rdfs:label "hasInformation"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ;
+                                                                             rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> ;
+                                                                             rdfs:comment "The flight has as origin a location"@en ;
+                                                                             rdfs:label "hasOrigin"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ;
+                                                                              rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> ;
+                                                                              rdfs:comment "The passenger has a passage"@en ;
+                                                                              rdfs:label "hasPassage"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ;
+                                                                                rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ;
+                                                                                rdfs:comment "The flight has passengers"@en ;
+                                                                                rdfs:label "hasPassenger"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> ;
+                                                                           rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ;
+                                                                           rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> ;
+                                                                           rdfs:comment "The passenger has a seat"@en ;
+                                                                           rdfs:label "hasSeat"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ;
+                                                                          rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> ;
+                                                                          rdfs:comment "The passenger is from a country"@en ;
+                                                                          rdfs:label "isFrom"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isPassengerType
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isPassengerType> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> ;
+                                                                                   rdfs:comment "The passenger type info"@en ;
+                                                                                   rdfs:label "isPassengerType"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> ;
+                                                                              rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ;
+                                                                              rdfs:range <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> ;
+                                                                              rdfs:comment "The passenger verification info"@en ;
+                                                                              rdfs:label "isVerified"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/comment
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/comment> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> ;
+                                                                           rdfs:range xsd:string ;
+                                                                           rdfs:comment "The comment of the review made by the passenger"@en ;
+                                                                           rdfs:label "comment"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ;
+                                                                               rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                            owl:onDatatype xsd:unsignedShort ;
+                                                                                            owl:withRestrictions ( [ xsd:minInclusive "1"^^xsd:unsignedShort
+                                                                                                                   ]
+                                                                                                                 )
+                                                                                          ] ;
+                                                                               rdfs:comment "The number of connections of a flight. The minimum number of connections is 1"@en ;
+                                                                               rdfs:label "connections"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/dateFlown
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/dateFlown> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ;
+                                                                             rdfs:range xsd:dateTime ;
+                                                                             rdfs:comment "The date where the flight flown. As we only have the month and year, we will only set day as 1 and time 00:00:00"@en ;
+                                                                             rdfs:label "dateFlown"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/datePublished
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/datePublished> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> ;
+                                                                                 rdfs:range xsd:dateTime ;
+                                                                                 rdfs:comment "Date when the review was published by the passenger"@en ;
+                                                                                 rdfs:label "datePublished"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isRecommended
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isRecommended> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> ;
+                                                                                 rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                              owl:onDatatype xsd:short ;
+                                                                                              owl:withRestrictions ( [ xsd:minInclusive "-1"^^xsd:short
+                                                                                                                     ]
+                                                                                                                     [ xsd:maxInclusive "1"^^xsd:short
+                                                                                                                     ]
+                                                                                                                   )
+                                                                                            ] ;
+                                                                                 rdfs:comment "If the passenger recommended the flight or not. There are cases where we do not know its value, so we have the following rules: 1 for recommended, 0 for not recommended and -1 for unkown"@en ;
+                                                                                 rdfs:label "isRecommended"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/name
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/name> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ;
+                                                                        rdfs:range xsd:string ;
+                                                                        rdfs:comment "The passenger name"@en ;
+                                                                        rdfs:label "name"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/rating
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/rating> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> ;
+                                                                          rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                       owl:onDatatype xsd:unsignedShort ;
+                                                                                       owl:withRestrictions ( [ xsd:minInclusive "1"^^xsd:unsignedShort
+                                                                                                              ]
+                                                                                                              [ xsd:maxInclusive "10"^^xsd:unsignedShort
+                                                                                                              ]
+                                                                                                            )
+                                                                                     ] ;
+                                                                          rdfs:comment "The review rating provided by the passenger, from 1 to 10"@en ;
+                                                                          rdfs:label "rating"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/title
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/title> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> ;
+                                                                         rdfs:range xsd:string ;
+                                                                         rdfs:comment "The title of the review made by the passenger"@en ;
+                                                                         rdfs:label "title"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> ;
+                                                                            rdfs:comment "The aircraft that operates one or more flights" ;
+                                                                            rdfs:label "Aircraft"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> ;
+                                                                           rdfs:comment "The airline that operates different flights"@en ;
+                                                                           rdfs:label "Airline"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Business
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Business> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> ;
+                                                                            rdfs:comment "Business passenger type"@en ;
+                                                                            rdfs:label "Business"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> ;
+                                                                                 rdfs:comment "Business class seat"@en ;
+                                                                                 rdfs:label "BusinessClass"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country> rdf:type owl:Class ;
+                                                                           rdfs:comment "The country, currently this is related to passanger only, but in long term it could be related to other entites, like location, airline..."@en ;
+                                                                           rdfs:label "Country"@en ;
+                                                                           rdfs:sameAs "https://dbpedia.org/ontology/country"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/CoupleLeisure
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/CoupleLeisure> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> ;
+                                                                                 rdfs:comment "Couple leisure passenger type"@en ;
+                                                                                 rdfs:label "CoupleLeisure"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> ;
+                                                                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> ;
+                                                                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> ;
+                                                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onDataRange xsd:unsignedShort
+                                                                                                ] ;
+                                                                                owl:disjointWith <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> ;
+                                                                                rdfs:comment "The flight is direct if the number of connections is 1"@en ;
+                                                                                rdfs:label "DirectFlight"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/EconomyClass
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/EconomyClass> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> ;
+                                                                                rdfs:comment "Economy class seat"@en ;
+                                                                                rdfs:label "EconomyClass"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FamilyLeisure
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FamilyLeisure> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> ;
+                                                                                 rdfs:comment "Family leisure passenger type"@en ;
+                                                                                 rdfs:label "FamilyLeisure"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FirstClass
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FirstClass> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> ;
+                                                                              rdfs:comment "First class seat"@en ;
+                                                                              rdfs:label "FirstClass"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> ;
+                                                                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation>
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> ;
+                                                                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger>
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> ;
+                                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline>
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> ;
+                                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location>
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> ;
+                                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location>
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> ;
+                                                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft>
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> ;
+                                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onDataRange xsd:unsignedShort
+                                                                                          ] ;
+                                                                          rdfs:comment "The flight route offered by the airline on a specific date"@en ;
+                                                                          rdfs:label "Flight"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation> rdf:type owl:Class ;
+                                                                                     rdfs:comment "The flight detailed information, like the aircraft that operated the flight, the airline that operates the flight..."@en ;
+                                                                                     rdfs:label "FlightInformation"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location> rdf:type owl:Class ;
+                                                                            rdfs:comment "Location data. Currently, it's related to the origin and destination of a flight, but it can be related with other entites in the future, like the passenger data, the diferent stops of a transit flight..."@en ;
+                                                                            rdfs:label "Location" ;
+                                                                            rdfs:sameAs "https://dbpedia.org/ontology/Location"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> ,
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> ;
+                                                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                    owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger>
+                                                                                                  ] ;
+                                                                                  rdfs:comment "The result of the review is flight not recommended by the passenger. Equivalent to isRecommended equal 0"@en ;
+                                                                                  rdfs:label "NotRecommended"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> ;
+                                                                                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification>
+                                                                                                         ] ;
+                                                                                         rdfs:comment "The passenger was not satisfied with the flight"@en ;
+                                                                                         rdfs:label "NotSatisfiedPassenger"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotVerified
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotVerified> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> ;
+                                                                               owl:disjointWith <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verified> ;
+                                                                               rdfs:comment "The passenger was not verified"@en ;
+                                                                               rdfs:label "NotVerified" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> rdf:type owl:Class ;
+                                                                           rdfs:comment "Passage info of the passenger"@en ;
+                                                                           rdfs:label "Passage"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> ;
+                                                                                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage>
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> ;
+                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight>
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> ;
+                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review>
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> ;
+                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat>
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> ;
+                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country>
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> ;
+                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification>
+                                                                                             ] ;
+                                                                             rdfs:comment "The passenger data"@en ;
+                                                                             rdfs:label "Passenger"@en ;
+                                                                             rdfs:sameAs "http://dbpedia.org/ontology/Person"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> ;
+                                                                                 rdfs:comment "The passenger type"@en ;
+                                                                                 rdfs:label "PassengerType"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PremiumEconomy
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PremiumEconomy> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> ;
+                                                                                  rdfs:comment "Premium economy seat"@en ;
+                                                                                  rdfs:label "PremiumEconomy"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> ;
+                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger>
+                                                                                                        ] ;
+                                                                                        rdfs:comment "We do not know if the passenger recommended or not the flight. Equivalent to isRecommended equal -1"@en ;
+                                                                                        rdfs:label "RecommendationUnknwon"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> ,
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> ;
+                                                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                 owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger>
+                                                                                               ] ;
+                                                                               rdfs:comment "The result of the review is flight recommended by the passenger. Equivalent to isRecommended equal 1"@en ;
+                                                                               rdfs:label "Recommended"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy> ;
+                                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger>
+                                                                                          ] ;
+                                                                          rdfs:comment "Review data of the survey, with info like rating, published date, comment..."@en ;
+                                                                          rdfs:label "Review"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger> ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> ;
+                                                                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification>
+                                                                                                ] ;
+                                                                                rdfs:comment "Grade of satisfaction of the passenger, based on the review rating value. If the rating is higher or equal than 5, then the passenger is considered as satisifed, otherwise is considered as not satisfied"@en ;
+                                                                                rdfs:label "Satisfaction"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction> ,
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage> ;
+                                                                                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                        owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage>
+                                                                                                      ] ,
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith> ;
+                                                                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                        owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight>
+                                                                                                      ] ,
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered> ;
+                                                                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                        owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review>
+                                                                                                      ] ,
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat> ;
+                                                                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                        owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat>
+                                                                                                      ] ,
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom> ;
+                                                                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                        owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country>
+                                                                                                      ] ,
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified> ;
+                                                                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                        owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification>
+                                                                                                      ] ;
+                                                                                      rdfs:comment "The passenger was satisfied with the flight"@en ;
+                                                                                      rdfs:label "SatisfiedPassenger"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> ;
+                                                                        rdfs:comment "The seat info"@en ;
+                                                                        rdfs:label "Seat"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType> ;
+                                                                               rdfs:comment "Solo leisure passenger type"@en ;
+                                                                               rdfs:label "SoloLeisure"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight> ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation> ;
+                                                                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                   owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation>
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger> ;
+                                                                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                   owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger>
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline> ;
+                                                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                   owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline>
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination> ;
+                                                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                   owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location>
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin> ;
+                                                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                   owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location>
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft> ;
+                                                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                   owl:onClass <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft>
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections> ;
+                                                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                   owl:onDataRange xsd:unsignedShort
+                                                                                                 ] ;
+                                                                                 rdfs:comment "The flight is transit if the number of connections is greater than 1"@en ;
+                                                                                 rdfs:label "TransitFlight"@en .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage> ;
+                                                                                rdfs:comment "Verification represents if the passage was verified or not. If it was not verified, then we do not know if the passenger was a truthly passenger of the flight."@en ;
+                                                                                rdfs:label "Verification" .
+
+
+###  http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verified
+<http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verified> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification> ;
+                                                                            rdfs:comment "The passenger was verified"@en ;
+                                                                            rdfs:label "Verified"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Business>
+                <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/CoupleLeisure>
+                <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FamilyLeisure>
+                <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass>
+                <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/EconomyClass>
+                <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FirstClass>
+                <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PremiumEconomy>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended>
+                <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown>
+                <http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
