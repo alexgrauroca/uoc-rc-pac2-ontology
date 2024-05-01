@@ -1,0 +1,29 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:EconomyClass" "base:CoupleLeisure" "base:Business" "base:NotRecommended" "base:Flight" "base:RecomendationUnknown" "base:Passenger" "base:NotSatisfiedPassenger" "base:DirectFlight" "base:SoloLeisure" "base:Aircraft" "base:Recommended" "base:FamilyLeisure" "base:PremiumEconomy" "base:FirstClass" "base:Verified" "base:Satisfaction" "base:Review" "base:TransitFlight" "base:Seat" "base:NotVerified" "base:SatisfiedPassenger" "base:Airline" "base:FlightInformation" "base:BusinessClass" "base:Passage" "base:Verification" "base:PassengerType" ; /*classes style*/
+	"base:SatisfiedPassenger" -> "base:Satisfaction" [ label = "rdfs:subClassOf" ];
+	"base:NotVerified" -> "base:Verification" [ label = "rdfs:subClassOf" ];
+	"base:Verification" -> "base:Passage" [ label = "rdfs:subClassOf" ];
+	"base:NotSatisfiedPassenger" -> "base:Satisfaction" [ label = "rdfs:subClassOf" ];
+	"base:Airline" -> "base:FlightInformation" [ label = "rdfs:subClassOf" ];
+	"base:Aircraft" -> "base:FlightInformation" [ label = "rdfs:subClassOf" ];
+	"base:TransitFlight" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:RecomendationUnknown" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:DirectFlight" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:Satisfaction" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:Business" -> "base:PassengerType" [ label = "rdfs:subClassOf" ];
+	"base:FirstClass" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+	"base:BusinessClass" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+	"base:Recommended" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:PremiumEconomy" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+	"base:Verified" -> "base:Verification" [ label = "rdfs:subClassOf" ];
+	"base:FamilyLeisure" -> "base:PassengerType" [ label = "rdfs:subClassOf" ];
+	"base:PassengerType" -> "base:Passage" [ label = "rdfs:subClassOf" ];
+	"base:SoloLeisure" -> "base:PassengerType" [ label = "rdfs:subClassOf" ];
+	"base:NotRecommended" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:Seat" -> "base:Passage" [ label = "rdfs:subClassOf" ];
+	"base:EconomyClass" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+	"base:CoupleLeisure" -> "base:PassengerType" [ label = "rdfs:subClassOf" ];
+
+}

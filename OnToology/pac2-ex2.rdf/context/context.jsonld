@@ -1,0 +1,209 @@
+{
+  "@context" : {
+    "Verified" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verified"
+    },
+    "Verification" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Verification"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Review"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "NotSatisfiedPassenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotSatisfiedPassenger"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Country"
+    },
+    "hasInformation" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasInformation",
+      "@type" : "@id"
+    },
+    "hasAircraft" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAircraft",
+      "@type" : "@id"
+    },
+    "Recommended" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Recommended"
+    },
+    "isPassengerType" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isPassengerType",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "codeRepository" : {
+      "@id" : "http://schema.org/codeRepository"
+    },
+    "isRecommended" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isRecommended"
+    },
+    "CoupleLeisure" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/CoupleLeisure"
+    },
+    "hasDestination" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasDestination",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasSeat" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasSeat",
+      "@type" : "@id"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Location"
+    },
+    "NotVerified" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotVerified"
+    },
+    "FirstClass" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FirstClass"
+    },
+    "Business" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Business"
+    },
+    "flownWith" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/flownWith",
+      "@type" : "@id"
+    },
+    "answeredBy" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/answeredBy",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "TransitFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/TransitFlight"
+    },
+    "name" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NotRecommended" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/NotRecommended"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passenger"
+    },
+    "Seat" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Seat"
+    },
+    "FamilyLeisure" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FamilyLeisure"
+    },
+    "isVerified" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isVerified",
+      "@type" : "@id"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Aircraft"
+    },
+    "DirectFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/DirectFlight"
+    },
+    "hasPassage" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassage",
+      "@type" : "@id"
+    },
+    "hasAnswered" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAnswered",
+      "@type" : "@id"
+    },
+    "SatisfiedPassenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SatisfiedPassenger"
+    },
+    "title" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isFrom" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/isFrom",
+      "@type" : "@id"
+    },
+    "datePublished" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/datePublished",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Airline"
+    },
+    "RecomendationUnknown" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/RecomendationUnknown"
+    },
+    "Passage" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Passage"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Flight"
+    },
+    "EconomyClass" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/EconomyClass"
+    },
+    "hasOrigin" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasOrigin",
+      "@type" : "@id"
+    },
+    "hasAirline" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasAirline",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/comment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "rating" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/rating"
+    },
+    "Satisfaction" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/Satisfaction"
+    },
+    "SoloLeisure" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/SoloLeisure"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "BusinessClass" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/BusinessClass"
+    },
+    "PremiumEconomy" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PremiumEconomy"
+    },
+    "FlightInformation" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/FlightInformation"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "hasPassenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/hasPassenger",
+      "@type" : "@id"
+    },
+    "dateFlown" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/dateFlown",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "connections" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/connections"
+    },
+    "PassengerType" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/3/airline-rating/PassengerType"
+    }
+  }
+}
